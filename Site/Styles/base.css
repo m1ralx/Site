@@ -1,0 +1,41 @@
+﻿body {
+    background: #84142a
+}#menu {
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 0px 20px 20px 0px;
+    border-right: 2px solid #eac208;
+    background-color: #84142A;
+    border-bottom: 2px solid #eac208;
+    border-top: 2px solid #eac208;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu li {
+    height: 33px;
+    display: inline-block;
+    float: left;
+    padding: 10px 15px 7px 15px;
+    font-size: 32px;
+    line-height: 26px;
+    font-family: 'Georgia', serif;
+    border-right: 2px solid #EAC208;
+    -ms-border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+a {
+    font-style: italic;
+    color: #EAC208;
+    text-decoration: none;
+}
+h2{
+    font-style: italic;
+    color: #eac208;
+}
