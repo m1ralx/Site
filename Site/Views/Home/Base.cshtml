@@ -4,18 +4,28 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/Styles/base.css"/>
+    @RenderSection("Title")
 </head>
 <body>
-<header>
-    <nav id="menu">
-        <ul>
-            <li><a href="/Home">Home</a></li>
-            <li><a href="/Gallery">Gallery</a></li>
-            <li><a href="/AboutMe">About me</a></li>
-            <li><a href="/Contacts">Contacts</a></li>
-        </ul>
-    </nav>
-</header>
-@RenderBody()
+    <header>
+        <img id="head-img"src="~/Content/Images/head.jpg"/>
+        <div id="logo"></div>
+        <nav id="menu">
+            <ul>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="/AboutMe">About me</a></li>
+                <li><a href="/Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="content">
+            @RenderBody()
+        </div>
+        <div class="footer">
+            Created by <a href="vk.com/mironov_alexei">Alexey Mironov</a>&copy;
+        </div>
+    </div>
 </body>
 </html>
