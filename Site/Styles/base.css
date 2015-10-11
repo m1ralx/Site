@@ -9,7 +9,7 @@
         background-color: grey;
         border: 2px solid black;
         -ms-border-radius: 25px 25px 25px 25px;
-        border-radius: 25px 25px 25px 25px;
+        /*border-radius: 25px 25px 25px 25px;*/
         width: 100%;
         margin: 0;
         padding: 0;
@@ -31,7 +31,7 @@
             font-size: 20px;
             line-height: 26px;
             font-family: 'Georgia', serif;
-            border-right: 2px solid black;
+            /*border-right: 2px solid black;*/
             -ms-border-radius: 0px 20px 20px 0px;
         }
 
@@ -71,9 +71,9 @@
         height: 50px;
         overflow: hidden;
         background-color: grey;
-        border: 2px solid black;
+        border: 2px solid #696969;
         -ms-border-radius: 25px 25px 25px 25px;
-        border-radius: 25px 25px 25px 25px;
+        /*border-radius: 25px 25px 25px 25px;*/
         width: 100%;
         margin: 0;
         padding: 0;
@@ -92,10 +92,10 @@
         display: table-cell;
         float: none;
         padding: 10px 15px 7px 15px;
-        font-size: 20px;
+        font-size: 2vw;
         line-height: 26px;
         font-family: 'Georgia', serif;
-        border-right: 2px solid black;
+        border-right: 2px solid #696969;
         -ms-border-radius: 0px 20px 20px 0px;
     }
 
@@ -126,33 +126,5 @@
     h2 {
         font-style: italic;
         color: black;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        background: grey;
-    }
-    
-    #menu {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        width: 90px;
-    }
-
-    #menu ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    #menu li {
-        display: table-row;
-        width: 90px;
-        height: 50px;
-        float: left;
-        padding: 10px 15px 7px 15px;
-        font-size: 12px;
-        border-right: none;
     }
 }
