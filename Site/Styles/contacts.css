@@ -1,0 +1,19 @@
+﻿body {
+}
+
+#contacts-list {
+    list-style-type: disc;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    color: #000;
+}
+
+#contacts-list li a {
+    display: block;
+    color: #a52a2a;
+    text-decoration: none;
+}
+
+#contacts-list li a:visited {
+    color: #a0522d;
+}

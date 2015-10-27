@@ -1,0 +1,123 @@
+﻿#timetable .logo {
+    display: block;
+    height: 30px;
+    width: 110px;
+    border: 1px solid #000;
+}
+
+#timetable .britishairways {
+    background-image: url(http://www.koltsovo.ru/attels/logo4site/59.gif);
+}
+
+#timetable .s7 {
+    background-image: url(http://www.koltsovo.ru/attels/logo4site/390.gif);
+}
+
+#timetable .aeroflot {
+    background-image: url(http://www.koltsovo.ru/attels/logo4site/397.gif);
+}
+
+#timetable .uralairlines {
+    background-image: url(http://www.koltsovo.ru/attels/logo4site/416.gif);
+}
+
+#timetable .airfrance {
+    background-image: url(http://www.koltsovo.ru/attels/logo4site/2251.gif);
+}
+
+#timetable .utair {
+    background-image: url(http://www.koltsovo.ru/attels/logo4site/515.gif);
+}
+
+#timetable {
+    border: 1px solid #ff4900;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0 150px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#timetable thead tr {
+    background: #006c8b;
+}
+
+#timetable tbody tr {
+    color: #000;
+}
+
+#timetable tr td:after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+#timetable td, #timetable th {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: .3em;
+}
+
+tr:nth-child(even) td:after {
+    background: #579dfa;
+}
+tr:nth-child(odd) td:after {
+    background: #db7093;
+}
+
+#timetable tr:hover:not(.timetable-header) {
+    background-color: #cd4c4c;
+}
+
+#timetable td:hover::after,
+#timetable th:hover::after {
+    content: "";
+    position: absolute;
+    background-color: #cd4c4c;
+    left: 0;
+    top: -1500%;
+    height: 4000%;
+    width: 100%;
+    z-index: -1;
+}
+
+#send-info input {
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#send-info input[type="tel"]:valid,
+#send-info input[type="email"]:valid {
+    background: #98fb98;
+}
+
+#send-info input[type="tel"]:invalid,
+#send-info input[type="email"]:invalid {
+    background: #ffc4be;
+}
+
+#send-info {
+    border: 1px solid;
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#send-info label {
+    font-size: 30px;
+}
+
+#submit {
+    display: none;
+}
+
+#send-info:valid #submit {
+    display: inline;
+}

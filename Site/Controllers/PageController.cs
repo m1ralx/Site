@@ -11,7 +11,7 @@ namespace Site.Controllers
         //
         // GET: /Page/
         
-        public ActionResult AboutMe()
+        public ActionResult MyWorks()
         {
             return View();
             
@@ -23,6 +23,16 @@ namespace Site.Controllers
         }
 
         public ActionResult Contacts()
+        {
+            return View();
+        }
+
+        public ActionResult Timetable()
+        {
+            return View();
+        }
+
+        public ActionResult Servant()
         {
             return View();
         }

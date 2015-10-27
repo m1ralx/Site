@@ -1,0 +1,236 @@
+﻿@model dynamic
+
+@{
+    Layout = "~/Views/Home/Base.cshtml";
+}
+@section Head {
+    <title>Timetable</title>
+    <link rel="stylesheet" href="~/Styles/timetable.css" />
+}
+<table id="timetable">
+    <thead>
+        <tr class="timetable-header">
+            <th>ТИП РЕЙСА</th>
+            <th>НОМЕР РЕЙСА</th>
+            <th>АВИАКОМПАНИЯ</th>
+            <th>ЛОГОТИП<br>КОМПАНИИ</th>
+            <th>
+                ТИП<br>
+                ВОЗДУШНОГО<br>
+                СУДНА
+            </th>
+            <th>НАПРАВЛЕНИЕ</th>
+            <th>ПЛАНОВОЕ ВРЕМЯ<br>ВЫЛЕТА/ПРИЛЁТА</th>
+            <th>ТЕРМИНАЛ</th>
+            <th>СТАТУС</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Прилёт</td>
+            <td>U6-356</td>
+            <td>Ural Airlines</td>
+            <td><a href="http://www.uralairlines.ru/" target="_blank" class="logo uralairlines"></a></td>
+            <td>A-321</td>
+            <td>ЕКАТЕРИНБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T09:40">22 Окт 09:40</time>
+            </td>
+            <td>D</td>
+            <td>Прибыл</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>U6-2949</td>
+            <td>Ural Airlines</td>
+            <td><a href="http://www.uralairlines.ru" target="_blank" class="logo uralairlines"></a></td>
+            <td>A-320</td>
+            <td>ЕРЕВАН</td>
+            <td>
+                <time datetime="2015-10-22T10:20">22 Окт 10:20</time>
+            </td>
+            <td>D</td>
+            <td>Вылетел</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>UT-127</td>
+            <td>UTair</td>
+            <td><a href="http://www.utair.ru" target="_blank" class="logo utair"></a></td>
+            <td>AT-72-5</td>
+            <td>САМАРА</td>
+            <td>
+                <time datetime="2015-10-22T10:40">22 Окт 10:40</time>
+            </td>
+            <td>C</td>
+            <td>Вылетел</td>
+        </tr>
+        <tr>
+            <td>Прилёт</td>
+            <td>AF-4902</td>
+            <td>AirFrance</td>
+            <td><a href="http://www.airfrance.ru" target="_blank" class="logo airfrance"></a></td>
+            <td>A-321</td>
+            <td>ЕКАТЕРИНБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T11:10">22 Окт 11:10</time>
+            </td>
+            <td>C</td>
+            <td>Приземлился</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>SU-1411</td>
+            <td>Aeroflot</td>
+            <td><a href="http://www.aeroflot.ru" target="_blank" class="logo aeroflot"></a></td>
+            <td>A-321</td>
+            <td>МОСКВА/ШРМ</td>
+            <td>
+                <time datetime="2015-10-22T12:00">22 Окт 12:00</time>
+            </td>
+            <td>A</td>
+            <td>Ожидание посадки</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>U6-274</td>
+            <td>Ural Airlines</td>
+            <td><a href="http://www.uralairlines.ru" target="_blank" class="logo uralairlines"></a></td>
+            <td>A-319</td>
+            <td>МОСКВА/ДМД</td>
+            <td>
+                <time datetime="2015-10-22T12:00">22 Окт 12:00</time>
+            </td>
+            <td>A</td>
+            <td>Посадка закочена</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>U6-356</td>
+            <td>Ural Airlines</td>
+            <td><a href="http://www.uralairlines.ru" target="_blank" class="logo uralairlines"></a></td>
+            <td>A-320</td>
+            <td>С-ПЕТЕРБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T12:05">22 Окт 12:05</time>
+            </td>
+            <td>A</td>
+            <td>Регистрация закочена</td>
+        </tr>
+        <tr>
+            <td>Прилёт</td>
+            <td>SU-1400</td>
+            <td>Aeroflot</td>
+            <td><a href="http://www.aeroflot.ru" target="_blank" class="logo aeroflot"></a></td>
+            <td>A-320</td>
+            <td>ЕКАТЕРИНБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T13:10">22 Окт 13:10</time>
+            </td>
+            <td>C</td>
+            <td>Летит</td>
+        </tr>
+        <tr>
+            <td>Прилёт</td>
+            <td>AF-4428</td>
+            <td>Airfrance</td>
+            <td><a href="http://www.airfrance.ru" target="_blank" class="logo airfrance"></a></td>
+            <td>A-320</td>
+            <td>ЕКАТЕРИНБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T13:10">22 Окт 13:10</time>
+            </td>
+            <td>C</td>
+            <td>Совмещён с SU-1400</td>
+        </tr>
+        <tr>
+            <td>Прилёт</td>
+            <td>BA-8787</td>
+            <td>British Airways</td>
+            <td>
+                <a href="http://www.britishairways.com" target="_blank" class="logo britishairways"></a>
+            </td>
+            <td>A-319</td>
+            <td>ЕКАТЕРИНБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T13:15">22 Окт 13:15</time>
+            </td>
+            <td>A</td>
+            <td>Летит</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>S7-54</td>
+            <td>S7</td>
+            <td><a href="http://www.s7.ru" target="_blank" class="logo s7"></a></td>
+            <td>A-319</td>
+            <td>C-ПЕТЕРБУРГ</td>
+            <td>
+                <time datetime="2015-10-22T13:40">22 Окт 13:40</time>
+            </td>
+            <td>C</td>
+            <td>Идёт регистрация</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>AF-4429</td>
+            <td>AirFrance</td>
+            <td><a href="http://www.airfrance.ru" target="_blank" class="logo airfrance"></a></td>
+            <td>A-321</td>
+            <td>МОСКВА/ШРМ</td>
+            <td>
+                <time datetime="2015-10-22T14:05">22 Окт 14:05</time>
+            </td>
+            <td>B</td>
+            <td>Идёт регистрация</td>
+        </tr>
+        <tr>
+            <td>Прилёт</td>
+            <td>U6-856</td>
+            <td>Ural airlines</td>
+            <td><a href="http://www.uralairlines.ru" target="_blank" class="logo uralairlines"></a></td>
+            <td>A-319</td>
+            <td>МОСКВА/ДМД</td>
+            <td>
+                <time datetime="2015-10-22T16:00">22 Окт 16:00</time>
+            </td>
+            <td>D</td>
+            <td>Ожидается прибытие</td>
+        </tr>
+        <tr>
+            <td>Прилёт</td>
+            <td>SU-1402</td>
+            <td>Aeroflot</td>
+            <td><a href="http://www.aeroflot.ru" target="_blank" class="logo aeroflot"></a></td>
+            <td>B-737-700</td>
+            <td>МОСКВА/ШРМ</td>
+            <td>
+                <time datetime="2015-10-22T16:15">22 Окт 16:15</time>
+            </td>
+            <td>D</td>
+            <td>Идёт посадка</td>
+        </tr>
+        <tr>
+            <td>Вылет</td>
+            <td>UT-4109</td>
+            <td>UTair</td>
+            <td><a href="http://www.utair.ru" target="_blank" class="logo utair"></a></td>
+            <td>B-737-700</td>
+            <td>МОСКВА/ВНК</td>
+            <td>
+                <time datetime="2015-10-23T03:25">23 Окт 03:25</time>
+            </td>
+            <td>C</td>
+            <td>Отмена</td>
+        </tr>
+    </tbody>
+</table>
+<form id="send-info">
+    <h1>Отправить данные о рейсе на телефон</h1>
+    <label for="phone">Введите номер телефона</label><br>
+    <input id="phone" placeholder="+1234567890"
+            type="tel" minlength="10" pattern="(\+[\d]*)|([\d]*)" required><br>
+    <label for="email">Введите e-mail</label><br>
+    <input id="email" placeholder="your@email.com" type="email" required><br>
+    <input id="submit" type="submit" value="Отправить">
+</form>

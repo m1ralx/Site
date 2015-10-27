@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\head.jpg" />
+    <Content Include="Content\hpmorru_001.mp3" />
     <Content Include="Content\Images\head.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -195,8 +196,10 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\Titanic.mp4" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\subtitles.vtt" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -213,7 +216,7 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Styles\aboutMe.css" />
+    <Content Include="Styles\timetable.css" />
     <Content Include="Styles\base.css" />
     <Content Include="Styles\index.css" />
     <Content Include="Web.config">
@@ -231,9 +234,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Base.cshtml" />
-    <Content Include="Views\Page\AboutMe.cshtml" />
+    <Content Include="Views\Page\MyWorks.cshtml" />
     <Content Include="Views\Page\Gallery.cshtml" />
     <Content Include="Views\Page\Contacts.cshtml" />
+    <None Include="Views\Page\Servant.cshtml" />
+    <None Include="Views\Page\Timetable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

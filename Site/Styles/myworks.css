@@ -1,0 +1,15 @@
+﻿#works {
+    font-size: 25px;
+    width: 20%;
+}
+
+
+#works li a {
+    display: block;
+    color: #000080;
+    text-decoration: none;
+}
+
+#works li a:visited {
+    color: #000080;
+}
