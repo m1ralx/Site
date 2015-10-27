@@ -19,9 +19,6 @@ body {
 h1 {
     text-align: center;
 }
-a:focus {
-    outline: none;
-}
 img {
     float: left;
     margin: auto 20px;
@@ -33,7 +30,10 @@ img {
 .page-buffer {
     height: 50px;
 }
-
+#menu a:focus {
+    outline: none;
+    
+}
 .content {
     padding-bottom: 0;
 }
@@ -53,8 +53,8 @@ header img {
 }
 
 #menu {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #menu nav {
     display: table;
@@ -151,8 +151,6 @@ h2 {
         display: block;
         text-align: center;
         height: 10%;
-/*        padding-right: 34px;
-        padding-left: 0;*/
         font-size: 75%;
         line-height: 15px;
         border-right: none;
@@ -161,9 +159,6 @@ h2 {
     }
     #menu li:last-child {
         text-align: center;
-/*
-        border-bottom: none;
-*/
     }
     .images {
         margin: 0;
