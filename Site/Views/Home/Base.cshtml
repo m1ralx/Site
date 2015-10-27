@@ -7,10 +7,13 @@
     @RenderSection("Title")
 </head>
 <body>
+<div class="wrapper">
     <header>
-@*        <img id="head-img" src="~/Content/Images/head.jpg"/>*@
-        <img id="head-img" src="~/Content/head.jpg" alt="header.jpg"/>
-        <nav id="menu">
+        @*        <img id="head-img" src="~/Content/Images/head.jpg"/>*@
+        <img src="~/Content/head.jpg" alt="header.jpg" />
+    </header>
+    <div id="menu">
+        <nav>
             <ul>
                 <li><a href="/Home">Home</a></li>
                 <li><a href="/Gallery">Gallery</a></li>
@@ -18,14 +21,14 @@
                 <li><a href="/Contacts">Contacts</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="wrapper">
-        <div class="content">
-            @RenderBody()
-        </div>
-        <div class="footer">
-            Created by <a href="http://vk.com/mironov_alexei" target="blank_">Alexey Mironov</a>&copy;
-        </div>
+    </div>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <div class="page-buffer"></div>
+</div>
+    <div class="footer">
+        Created by <a href="http://vk.com/mironov_alexei" target="blank_">Alexey Mironov</a>&copy;
     </div>
 </body>
 </html>

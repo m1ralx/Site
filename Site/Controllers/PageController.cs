@@ -14,6 +14,7 @@ namespace Site.Controllers
         public ActionResult AboutMe()
         {
             return View();
+            
         }
 
         public ActionResult Gallery()
