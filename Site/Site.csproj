@@ -216,6 +216,9 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Styles\contacts.css" />
+    <Content Include="Styles\myworks.css" />
+    <Content Include="Styles\servant.css" />
     <Content Include="Styles\timetable.css" />
     <Content Include="Styles\base.css" />
     <Content Include="Styles\index.css" />
