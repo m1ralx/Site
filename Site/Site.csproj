@@ -215,6 +215,7 @@
     <Content Include="Scripts\_references.js" />
     <Content Include="Styles\aboutMe.css" />
     <Content Include="Styles\base.css" />
+    <Content Include="Styles\index.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

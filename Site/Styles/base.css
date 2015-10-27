@@ -127,7 +127,7 @@ h2 {
 
 @media screen and (max-width:550px), handheld {
     .wrapper {
-        width: 95%;
+        width: 90%;
         margin-right: 0;
     }
 
@@ -139,6 +139,7 @@ h2 {
         width: 90%;
         float: left;
         margin-bottom: 20px;
+        margin-left: 20px;
     }
 
     #menu ul {

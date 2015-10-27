@@ -1,0 +1,17 @@
+﻿#neymar-goal {
+    float: left;
+    margin: auto 20px;
+    margin-left: 0;
+}
+
+.images img {
+    width: 50%;
+}
+@media screen and (max-width:550px), handheld {
+    #neymar-goal {
+        width: 100%;
+    }
+    .images img {
+        width: 90%;
+    }
+}
