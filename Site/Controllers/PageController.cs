@@ -37,5 +37,10 @@ namespace Site.Controllers
             return View();
         }
 
+        public ActionResult Schedule()
+        {
+            return View();
+        }
+
     }
 }

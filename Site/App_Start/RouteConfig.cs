@@ -22,6 +22,7 @@ namespace Site
             routes.MapRoute("Gallery", "Gallery", new {controller = "Page", action = "Gallery"});
             routes.MapRoute("Contacts", "Contacts", new { controller = "Page", action = "Contacts" });
             routes.MapRoute("Timetable", "Timetable", new { controller = "Page", action = "Timetable" });
+            routes.MapRoute("Schedule", "Schedule", new {controller = "Page", action = "Schedule"});
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

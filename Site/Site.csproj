@@ -237,6 +237,7 @@
     <Content Include="Views\Page\MyWorks.cshtml" />
     <Content Include="Views\Page\Gallery.cshtml" />
     <Content Include="Views\Page\Contacts.cshtml" />
+    <Content Include="Views\Page\Schedule.cshtml" />
     <None Include="Views\Page\Servant.cshtml" />
     <None Include="Views\Page\Timetable.cshtml" />
   </ItemGroup>
