@@ -32,7 +32,7 @@ namespace Site.Controllers
             return View();
         }
 
-        public ActionResult Servant()
+        public ActionResult Shelf()
         {
             return View();
         }

@@ -238,7 +238,8 @@
     <Content Include="Views\Page\Gallery.cshtml" />
     <Content Include="Views\Page\Contacts.cshtml" />
     <Content Include="Views\Page\Schedule.cshtml" />
-    <None Include="Views\Page\Servant.cshtml" />
+    <Content Include="Views\Page\Shelf.cshtml" />
+    <None Include="Views\Page\Servant2.cshtml" />
     <None Include="Views\Page\Timetable.cshtml" />
   </ItemGroup>
   <ItemGroup>
