@@ -6,12 +6,12 @@
     <title>Gallery</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <link rel="stylesheet" href="~/Styles/gallery.css"/>
-    @System.Web.Optimization.Scripts.Render("~/Scripts/gallery.js");
+    <script src="../../Scripts/gallery.js"></script>
 }
 <div class="gallery">
-    <div id="button-left"><img src="../../Content/Images/arrow.png"/></div>
+    <div id="button-left"><img src="~/Content/Images/arrow.png"/></div>
     @{
-        var srcs = Enumerable.Range(1, 8).Select(i => "~/Content/Gallery/" + i + ".jpg").ToList();
+        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/Gallery/" + i + ".jpg").ToList();
         for (var i = 0; i < 8; i++)
         {
             var src = srcs[i];
@@ -20,7 +20,7 @@
             </div>
         }
     }
-    <div id="button-right"><img src="../../Content/Images/arrow.png"/></div>
+    <div id="button-right"><img src="~/Content/Images/arrow.png"/></div>
     <div class="modal">
         <div class="left"></div>
         <div class="modal-image">

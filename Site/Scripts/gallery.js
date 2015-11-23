@@ -29,8 +29,8 @@ $(document).ready(function () {
             }
         }
     };
-    $("#button-left").click(toRight);
-    $("#button-right").click(toLeft);
+    $("#button-left").click(toLeft);
+    $("#button-right").click(toRight);
     for (let i = 1; i <= 8; i++) {
         $(".image-" + i).click(function () {
             currentChoice = i;
