@@ -214,6 +214,7 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Styles\contacts.css" />
+    <Content Include="Styles\gallery.css" />
     <Content Include="Styles\myworks.css" />
     <Content Include="Styles\servant.css" />
     <Content Include="Styles\timetable.css" />
@@ -244,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Gallery\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

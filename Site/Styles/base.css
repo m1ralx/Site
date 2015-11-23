@@ -1,5 +1,4 @@
-﻿
-html,
+﻿html,
 body {
     height: 100%;
     margin: 0;
@@ -32,6 +31,7 @@ img {
 .page-buffer {
     height: 50px;
 }
+
 #menu a:focus {
     outline: none;
     
@@ -124,7 +124,7 @@ header img {
 h2 {
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    color: black;
+    color: #000;
 }
 
 @media screen and (max-width:550px), handheld {

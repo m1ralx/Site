@@ -1,8 +1,32 @@
 ﻿@{
-    ViewBag.Title = "Gallery";
+    //ViewBag.Title = "Gallery";
     Layout = "~/Views/Home/Base.cshtml";
 }
 @section Head {
     <title>Gallery</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/Styles/gallery.css"/>
+    <script src="../../Scripts/gallery.js"></script>
 }
-<h2>Here will be gallery</h2>
+<div class="gallery">
+    <div id="button-left"><img src="../../Content/Images/arrow.png"/></div>
+    @{
+        var srcs = Enumerable.Range(1, 8).Select(i => "../../Content/Gallery/" + i + ".jpg").ToList();
+        for (var i = 0; i < 8; i++)
+        {
+            var src = srcs[i];
+            <div class="image-@(i + 1)">
+                <img src=@src>
+            </div>
+        }
+    }
+    <div id="button-right"><img src="../../Content/Images/arrow.png"/></div>
+    <div class="modal">
+        <div class="left"></div>
+        <div class="modal-image">
+            <div class="closing"><img src="http://you-ps.ru/uploads/posts/2013-08/1376601709_1270.png"/></div>
+            <img src=""/>
+        </div>
+        <div class="right"></div>
+    </div>
+</div>
