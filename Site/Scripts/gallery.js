@@ -46,22 +46,6 @@ $(document).ready(function () {
             var img = new Image();
             img.onload = function () { $('.main-image').attr('src', img.src); }
             img.src = "/Content/Gallery/" + i + ".jpg";
-
-//          $(".modal-image > img").attr("src", $(".image-" + i + " img").attr("src"));
-//            $(".main-image").attr("src", "/Content/Gallery/" + i + ".jpg");
-//            $(".main-image").hide();
-//            $(".loading").hide();
-
-//            console.log("kek");
-//            $(".modal-image > img").onload(function () {
-//                $(".main-image").show();
-//                $(".loading").hide();
-//            });
-//            $(".modal-image > img").one("load", function () {
-//                 do stuff
-//            }).each(function () {
-//                if (this.complete) $(this).load();
-//            });
         });
     }
 
