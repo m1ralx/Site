@@ -52,7 +52,7 @@ $(document).ready(function () {
         });
     }
 
-    $(".left").click(function () {
+    function modalToLeft() {
         toLeft();
         currentChoice--;
         if (currentChoice === 0)
@@ -61,8 +61,10 @@ $(document).ready(function () {
         $(".main-image").attr("src", "/Content/Images/loading.gif");
         img.onload = function () { $(".main-image").attr("src", img.src); }
         img.src = "/Content/Gallery/" + currentChoice + ".jpg";
-    });
-    $(".right").click(function () {
+    }
+
+    $(".left").click(modalToLeft);
+    function modalToRight() {
         toRight();
         currentChoice++;
         if (currentChoice === gallerySize)
@@ -71,9 +73,21 @@ $(document).ready(function () {
         $(".main-image").attr("src", "/Content/Images/loading.gif");
         img.onload = function () { $(".main-image").attr("src", img.src); }
         img.src = "/Content/Gallery/" + currentChoice + ".jpg";
-    });
+    }
+    $(".right").click(modalToRight);
     $(".closing").click(function () {
+        currentChoice = 0;
         $(".main-image").attr("src", "/Content/Images/loading.gif");
         $(".modal").hide();
+    });
+    $(document).keydown(function (event) {
+        if (event.keyCode === 39)
+            modalToRight();
+        if (event.keyCode === 37)
+            modalToLeft();
+        console.log($(".modal").css("display"));
+        if ($(".modal").css("display") === "none") {
+            $(".main-image").attr("src", "/Content/Images/loading.gif");
+        }
     });
 });
