@@ -8,6 +8,7 @@ div[class^="image"]{
     display: flex;
     height: calc(1024px/25%);
     flex-basis: 20%;
+    cursor: pointer;
 }
 .gallery .image-5,
 .gallery .image-6,
@@ -27,6 +28,7 @@ div[id^="button"] {
     width: 64px;
     height: 64px;
     align-self: center;
+    cursor: pointer;
 }
 
 div[id^="button"] img {
@@ -57,7 +59,7 @@ div[id^="button"] img {
     width: 50%;
     height: auto;
     z-index: 20;
-    flex-basis: 60%;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -76,17 +78,30 @@ div[id^="button"] img {
     max-height: 200px;
 }
 .closing {
-    font-size: 50px;
-    color: #faf0e6;
     text-align: end;
 }
 .closing img {
     width: 48px;
     height: 48px;
+    cursor: pointer;
 }
 .left,
 .right {
     height: 100%;
     flex-basis: 20%;
     min-width: 200px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.left img,
+.right img {
+    width: 128px;
+    height: 128px;
+    align-self: center;
+}
+
+.right img {
+    transform: scale(-1, 1);
 }
