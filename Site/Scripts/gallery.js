@@ -85,7 +85,6 @@ $(document).ready(function () {
             modalToRight();
         if (event.keyCode === 37)
             modalToLeft();
-        console.log($(".modal").css("display"));
         if ($(".modal").css("display") === "none") {
             $(".main-image").attr("src", "/Content/Images/loading.gif");
         }
