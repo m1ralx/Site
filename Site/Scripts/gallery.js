@@ -56,6 +56,7 @@ $(document).ready(function () {
         currentChoice--;
         toLeft();
         var img = new Image();
+        $(".main-image").attr('src', "/Content/Images/loading.gif");
         img.onload = function () { $('.main-image').attr('src', img.src); }
         img.src = "/Content/Gallery/" + currentChoice + ".jpg";
 //        $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
@@ -66,6 +67,7 @@ $(document).ready(function () {
         currentChoice++;
         toRight();
         var img = new Image();
+        $(".main-image").attr('src', "/Content/Images/loading.gif");
         img.onload = function () { $('.main-image').attr('src', img.src); }
         img.src = "/Content/Gallery/" + currentChoice + ".jpg";
 //        $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
