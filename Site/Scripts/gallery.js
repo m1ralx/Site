@@ -55,14 +55,20 @@ $(document).ready(function () {
             return;
         currentChoice--;
         toLeft();
-        $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
+        var img = new Image();
+        img.onload = function () { $('.main-image').attr('src', img.src); }
+        img.src = "/Content/Gallery/" + currentChoice + ".jpg";
+//        $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
     });
     $(".right").click(function () {
         if (currentChoice > gallerySize-1)
             return;
         currentChoice++;
         toRight();
-        $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
+        var img = new Image();
+        img.onload = function () { $('.main-image').attr('src', img.src); }
+        img.src = "/Content/Gallery/" + currentChoice + ".jpg";
+//        $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
     });
     $(".closing").click(function () {
         $(".modal").hide();

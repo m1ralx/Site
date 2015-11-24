@@ -145,11 +145,20 @@
     <Content Include="Content\Gallery\6.jpg" />
     <Content Include="Content\Gallery\7.jpg" />
     <Content Include="Content\Gallery\8.jpg" />
+    <Content Include="Content\Gallery\thumbs\1.jpg" />
+    <Content Include="Content\Gallery\thumbs\2.jpg" />
+    <Content Include="Content\Gallery\thumbs\3.jpg" />
+    <Content Include="Content\Gallery\thumbs\4.jpg" />
+    <Content Include="Content\Gallery\thumbs\5.jpg" />
+    <Content Include="Content\Gallery\thumbs\6.jpg" />
+    <Content Include="Content\Gallery\thumbs\7.jpg" />
+    <Content Include="Content\Gallery\thumbs\8.jpg" />
     <Content Include="Content\head.jpg" />
     <Content Include="Content\Images\arrow.png" />
     <Content Include="Content\Images\head.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Images\loading.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
