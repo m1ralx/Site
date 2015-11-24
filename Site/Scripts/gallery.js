@@ -36,22 +36,45 @@ $(document).ready(function () {
     };
     $("#button-left").click(toLeft);
     $("#button-right").click(toRight);
-    for (let i = 1; i <= 8; i++) {
+
+
+    for (let i = 1; i <= gallerySize; i++) {
         $(".image-" + i).click(function () {
             currentChoice = i;
             $(".modal").css("display", "flex");
-            $(".modal-image > img").attr("src", $(".image-" + i + " img").attr("src"));
+
+            var img = new Image();
+            img.onload = function () { $('.main-image').attr('src', img.src); }
+            img.src = "/Content/Gallery/" + i + ".jpg";
+
+//          $(".modal-image > img").attr("src", $(".image-" + i + " img").attr("src"));
+//            $(".main-image").attr("src", "/Content/Gallery/" + i + ".jpg");
+//            $(".main-image").hide();
+//            $(".loading").hide();
+
+//            console.log("kek");
+//            $(".modal-image > img").onload(function () {
+//                $(".main-image").show();
+//                $(".loading").hide();
+//            });
+//            $(".modal-image > img").one("load", function () {
+//                 do stuff
+//            }).each(function () {
+//                if (this.complete) $(this).load();
+//            });
         });
     }
+
+
     $(".left").click(function () {
-        if (currentChoice < 2)
+        if (currentChoice === 1)
             return;
         currentChoice--;
         toLeft();
         $(".modal-image > img").attr("src", $(".image-" + currentChoice + " img").attr("src"));
     });
     $(".right").click(function () {
-        if (currentChoice > 7)
+        if (currentChoice > gallerySize-1)
             return;
         currentChoice++;
         toRight();

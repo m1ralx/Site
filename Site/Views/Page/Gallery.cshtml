@@ -13,8 +13,7 @@
         <div id="button-left">
             <img src="@Url.Content("/Content/Images/arrow.png")"/>
         </div>
-        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/Gallery/" + i + ".jpg").ToList();
-//        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/" + i + ".jpg").ToList();
+        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/Gallery/thumbs/" + i + ".jpg").ToList();
         for (var i = 0; i < 8; i++)
         {
             var src = srcs[i];
@@ -30,7 +29,8 @@
         <div class="left"></div>
         <div class="modal-image">
             <div class="closing"><img src="http://you-ps.ru/uploads/posts/2013-08/1376601709_1270.png"/></div>
-            <img src=""/>
+            <img class="main-image" src="@Url.Content("/Content/Images/loading.gif")"/>
+@*            <img class="loading" src="@Url.Content("/Content/Images/loading.gif")"/>*@
         </div>
         <div class="right"></div>
     </div>
