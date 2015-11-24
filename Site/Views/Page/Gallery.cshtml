@@ -13,13 +13,13 @@
         <div id="button-left">
             <img src="@Url.Content("/Content/Images/arrow.png")"/>
         </div>
-//        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/Gallery/" + i + ".jpg").ToList();
-        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/" + i + ".jpg").ToList();
+        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/Gallery/" + i + ".jpg").ToList();
+//        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/" + i + ".jpg").ToList();
         for (var i = 0; i < 8; i++)
         {
             var src = srcs[i];
             <div class="image-@(i + 1)">
-                <img src=@Url.Content(@src)>
+                <img src="@Url.Content(@src)">
             </div>
         }
         <div id="button-right">
