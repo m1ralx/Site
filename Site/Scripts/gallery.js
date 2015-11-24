@@ -55,10 +55,8 @@ $(document).ready(function () {
     $(".left").click(function () {
         toLeft();
         currentChoice--;
-        currentChoice = currentChoice < 0 ? -currentChoice : currentChoice;
         if (currentChoice === 0)
             currentChoice = gallerySize;
-        currentChoice %= (gallerySize + 1);
         var img = new Image();
         $(".main-image").attr("src", "/Content/Images/loading.gif");
         img.onload = function () { $(".main-image").attr("src", img.src); }
@@ -67,9 +65,8 @@ $(document).ready(function () {
     $(".right").click(function () {
         toRight();
         currentChoice++;
-        if (currentChoice === 0)
-            currentChoice = gallerySize;
-        currentChoice %= (gallerySize + 1);
+        if (currentChoice === gallerySize)
+            currentChoice = 1;
         var img = new Image();
         $(".main-image").attr("src", "/Content/Images/loading.gif");
         img.onload = function () { $(".main-image").attr("src", img.src); }
