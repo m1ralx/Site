@@ -1,17 +1,17 @@
 ﻿@{
-    //ViewBag.Title = "Gallery";
+    ViewBag.Title = "Gallery";
     Layout = "~/Views/Home/Base.cshtml";
 }
 @section Head {
     <title>Gallery</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <link rel="stylesheet" href="~/Styles/gallery.css"/>
-    <script src="../../Scripts/gallery.js"></script>
+    <script src=Url.Content("~/Scripts/gallery.js")></script>
 }
 <div class="gallery">
     <div id="button-left"><img src="~/Content/Images/arrow.png"/></div>
     @{
-        var srcs = Enumerable.Range(1, 8).Select(i => "/Content/Gallery/" + i + ".jpg").ToList();
+        var srcs = Enumerable.Range(1, 8).Select(i => Url.Content("~/Content/Gallery/" + i + ".jpg")).ToList();
         for (var i = 0; i < 8; i++)
         {
             var src = srcs[i];
