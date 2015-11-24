@@ -53,8 +53,8 @@ div[id^="button"] img {
 }
 
 .modal-image {
-    width: calc(1280px / 2);
-    height: calc(1024px / 2);
+    width: 50%;
+    height: auto;
     z-index: 20;
     flex-basis: 60%;
     display: flex;

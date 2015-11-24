@@ -6,8 +6,10 @@ $(document).ready(function () {
     var currentChoice = 0;
     function toLeft() {
         if (curLeft === 1) {
+            $("#button-left").css("visibility", "hidden");
             return;
         }
+        $("#button-right").css("visibility", "visible");
         curLeft--;
         for (let i = 1; i <= gallerySize; i++) {
             if (curLeft <= i && i < curLeft + displayedPhotos) {
@@ -18,8 +20,11 @@ $(document).ready(function () {
         }
     }
     function toRight() {
-        if (curLeft === gallerySize - displayedPhotos)
+        if (curLeft === gallerySize - displayedPhotos) {
+            $("#button-right").css("visibility", "hidden");
             return;
+        }
+        $("#button-left").css("visibility", "visible");
         curLeft++;
         for (let i = 1; i <= gallerySize; i++) {
             if (curLeft <= i && i < curLeft + displayedPhotos) {

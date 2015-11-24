@@ -137,7 +137,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Gallery\1.jpg" />
+    <Content Include="Content\Gallery\2.jpg" />
+    <Content Include="Content\Gallery\3.jpg" />
+    <Content Include="Content\Gallery\4.jpg" />
+    <Content Include="Content\Gallery\5.jpg" />
+    <Content Include="Content\Gallery\6.jpg" />
+    <Content Include="Content\Gallery\7.jpg" />
+    <Content Include="Content\Gallery\8.jpg" />
     <Content Include="Content\head.jpg" />
+    <Content Include="Content\Images\arrow.png" />
     <Content Include="Content\Images\head.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -246,7 +255,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Gallery\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
