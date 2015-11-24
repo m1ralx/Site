@@ -156,6 +156,7 @@
     <Content Include="Content\head.jpg" />
     <Content Include="Content\Images\arrow.png" />
     <Content Include="Content\Images\arrow2.png" />
+    <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\head.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
