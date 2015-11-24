@@ -6,20 +6,22 @@
     <title>Gallery</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <link rel="stylesheet" href="~/Styles/gallery.css"/>
-    @Scripts.Render(Url.Content("~/Scripts/gallery.js"));
+    @Scripts.Render(Url.Content("~/Scripts/gallery.js"))
 }
 <div class="gallery">
     @{
-        <div id="button-left"><img src=@Url.Content("~/Content/Images/arrow.png") /></div>
+        <div id="button-left">
+            <img src="@Url.Content("~/Content/Images/arrow.png")"/>
+        </div>
         var srcs = Enumerable.Range(1, 8).Select(i => @Url.Content("~/Content/Gallery/" + i + ".jpg")).ToList();
         for (var i = 0; i < 8; i++)
         {
             var src = srcs[i];
             <div class="image-@(i + 1)">
-                <img src=@src>
+                <img src="@src">
             </div>
         }
-        <div id="button-right"><img src=@Url.Content("~/Content/Images/arrow.png") /></div>
+        <div id="button-right"><img src="@Url.Content("~/Content/Images/arrow.png")"/></div>
     }
     <div class="modal">
         <div class="left"></div>
